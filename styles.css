@@ -286,6 +286,77 @@ img { max-width: 100%; }
   margin-bottom: 4px;
 }
 
+.page h2 {
+  margin: 48px 0 0;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.loop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 40em;
+}
+
+.loop li {
+  border: 0;
+  padding: 8px 12px;
+  background: rgba(16, 41, 40, 0.06);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.loop li + li::before {
+  content: "→ ";
+  color: var(--rust);
+}
+
+.chapters {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 40em;
+}
+
+.chapters li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(16, 41, 40, 0.12);
+  max-width: none;
+}
+
+.chapters .num {
+  color: var(--rust);
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.chapters li strong {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.chapters p {
+  margin: 0;
+  max-width: none;
+}
+
 a:focus-visible,
 .btn:focus-visible {
   outline: 2px solid var(--rust);
